@@ -35,6 +35,16 @@ public class ConnectionPool {
         }
     }
 
+    public static ConnectionPool getInstance(){
+		
+		if (instance != null) {
+			
+		}else {
+			instance = new ConnectionPool();
+		}
+		return instance;
+	}
+    
     /* 返回连接到连接池 */
     public synchronized void release() {
         pool.add(conn);
@@ -50,4 +60,5 @@ public class ConnectionPool {
             return null;
         }
     }
+    
 }
