@@ -17,5 +17,9 @@ public class TestSingleton {
 
 		MyObject object2 = MyObject.getInstance();
 		System.out.println(object2.toString());//---->singleton.MyObject@24859367
+		
+		//创建枚举类实现的单例
+		SingleEnum single = SingleEnum.INSTANCE;
+		System.out.println(single.toString());//------>single
 	}
 }
