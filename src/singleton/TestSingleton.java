@@ -21,5 +21,11 @@ public class TestSingleton {
 		//创建枚举类实现的单例
 		SingleEnum single = SingleEnum.INSTANCE;
 		System.out.println(single.toString());//------>single
+		
+		//test bestSingleton
+		BestSingleton bestSingleton = BestSingleton.getInstace();
+		BestSingleton bestSingleton2 = BestSingleton.getInstace();
+		System.out.println(bestSingleton.equals(bestSingleton2));
+		
 	}
 }
