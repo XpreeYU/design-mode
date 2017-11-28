@@ -2,6 +2,7 @@ package model.behaviour.mediator;
 public class Mediator extends AbstractMediator{  
 
     //中介者最重要的功能，来回奔波与各个同事之间  
+    @Override
     public void execute(String name, String method) {  
 
         if("self".equals(method)){  //各自做好分内事  

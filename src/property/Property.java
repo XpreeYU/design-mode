@@ -23,6 +23,7 @@ public class Property implements Cloneable, Serializable {
 	 * 1.实现对象的浅复制
 	 * @throws CloneNotSupportedException 
 	 */
+	@Override
 	public Object clone() throws CloneNotSupportedException{
 		// 因为Cloneable接口是个空接口，你可以任意定义实现类的方法名
         // 如cloneA或者cloneB，因为此处的重点是super.clone()这句话

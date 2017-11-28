@@ -12,11 +12,13 @@ package adaptor.interfaceAdaptor;
 public class NeedClass extends AbstractClass {
 
 	//重写父类的method2方法  --->overrides adaptor.interfaceAdaptor.AbstractClass.method2
+    @Override
 	public void method2(){
 		System.out.println("I'm method2");
 	}
 	
 	//重写父类的method4方法 --->overrides adaptor.interfaceAdaptor.AbstractClass.method4
+    @Override
 	public void method4(){
 		System.out.println("I'm method4");
 	}
